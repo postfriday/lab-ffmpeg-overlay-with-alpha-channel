@@ -10,8 +10,8 @@ Goal is to combine 1 png image (`03-tyan.png`) and 2 video files (`solchan_anima
 * Docker (https://www.docker.com/)
 
 ## Usage
-1. Clone this repository: `git clone git@github.com:postfriday/lab-ffmpeg-multylayers-merge.git`
-1. Change directory `cd lab-ffmpeg-multylayers-merge`
+1. Clone this repository: `git clone git@github.com:postfriday/lab-ffmpeg-overlay-with-alpha-channel.git`
+1. Change directory `cd lab-ffmpeg-overlay-with-alpha-channel`
 1. Execute: `make run`
 
 Makefile contains commands:
