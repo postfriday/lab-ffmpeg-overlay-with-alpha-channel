@@ -1,7 +1,7 @@
 # FFMPEG Experiment
 
 ## Goal
-Goal is to combine 1 png image (`03-tyan.png`) and 2 video files (`solchan_animated_bg_1200x1500.mp4`, `Solchan_animated_fg_softness_100_unmatted.mov`) into one video file. `03-tyan.png` and source video file (`Solchan_animated_fg_softness_100_unmatted.mov`) are with alpha channel. Final video should contains 3 media source combined layer by layer. Aplpha channels from source media files should be kept.
+Goal is to combine 1 png image (`03-tyan.png`) and 2 video files (`solchan_animated_bg_1200x1500.mp4`, `Solchan_animated_fg_softness_100_unmatted.mov`) into one video file. `03-tyan.png` and source video file (`Solchan_animated_fg_softness_100_unmatted.mov`) are with alpha channel. Final video should contains 3 media source combined layer by layer. Alpha channels from source media files should be kept.
 
 ## Requirements
 * Source video files for foreground must be type of `QuicktimeRLE` encoded with `qtrle`-codec.

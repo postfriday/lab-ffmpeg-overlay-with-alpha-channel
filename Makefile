@@ -9,7 +9,7 @@ run: # combine all source files together
 		-i ${ROOT}/in/solchan_animated_bg_1200x1500.mp4 \
 		-i ${ROOT}/in/03-tyan.png \
 		-i ${ROOT}/in/Solchan_animated_fg_softness_100_unmatted.mov \
-    	-filter_complex " \
+		-filter_complex " \
 			[0][1]overlay=0:0[a]; \
 			[0][1]overlay=0:0[e]; \
 			[a][2]blend=all_mode=glow:all_opacity=1[b]; \
@@ -17,7 +17,7 @@ run: # combine all source files together
 			[b][c]alphamerge[d]; \
 			[e][d]overlay \
 			" \
-    	-vcodec libx264 ${ROOT}/out/result.mp4
+		-vcodec libx264 ${ROOT}/out/result.mp4
 pixel_format: # shows pixel_format name of video
 	${FFPROBE} -v 0 -select_streams v:0 -show_entries stream=pix_fmt -of compact=p=0:nk=1 ${file}
 filter: # shows pixel formats that supports alpha channel where 'format' is printout from 'pixel_format' command
